@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h3 {
+    color: red;
+}
+
+body {
+    background-color: #E6EAF8;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather';
+    font-style: normal;
+}
+
+.container {
+    max-width: 1213px;
+    width: 100%;
+    background-color: white;
+    padding: 100px;
+}
+
+.title {
+    color: #151B32;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 70px;
+}
+
+.search {
+    width: 327px;
+    display: flex;
+    border: 1px solid #BFC8E6;
+    border-radius: 4px;
+    padding: 15px;
+    height: 100%;
+    align-items: center;
+
+}
+
+.search_icon {
+    width: 32px;
+    height: 32px;
+}
+
+.input_search {
+    padding-left: 4px;
+    border: unset;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    height: 24px;
+    flex: 1 1 auto;
+}
+
+.input_search:focus-visible {
+    outline: unset;
+}
+
+.menu_list {
+    display: flex;
+    list-style: none;
+    /* column-gap: 8px; */
+    padding-inline-start: 0;
+}
+
+.menu_list li {
+    padding: 16px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.menu_list li:hover {
+    background: #849FFF;
+    border-radius: 8px;
+    color: #ffff;
+}
+
+.menu_list li.active {
+    background: #849FFF;
+    border-radius: 8px;
+    color: #ffff;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 16px;
+
+}
+
+.person {
+    display: flex;
+    padding: 24px;
+    column-gap: 16px;
+    background-color: #FBFCFF;
+    border-radius: 16px;
+    min-height: 208px;
+    height: 100%;
+}
+
+.person:hover {
+    border: 1px solid #BFC8E6;
+    box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+    scale: 1.05;
+    transition-duration: 200ms;
+}
+
+.person_imgage {
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+}
+
+.person_info {
+    padding-top: 20px;
+}
+
+.name {
+    font-family: Merriweather;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #151B32;
+
+}
+
+.address {
+    padding-top: 4px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #151B32;
+}
+
+.favorite {
+    padding-top: 16px;
+    display: flex;
+    column-gap: 4px;
+    row-gap: 4px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #516FD5;
+}
